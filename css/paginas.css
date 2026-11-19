@@ -580,3 +580,85 @@
     color: var(--verde-principal);
     text-decoration: underline;
 }
+
+
+/* =========================================
+   SUBTÍTULOS, FOTOS, QUADROS E TABELAS
+   DENTRO DOS CARTÕES E DA JANELA
+   (usados em Produção de Mudas > Recipientes)
+========================================= */
+
+.card-topico-texto h3,
+.modal-texto h3 {
+    margin: 1.5rem 0 0.5rem;
+    color: var(--verde-escuro);
+}
+
+.card-topico-foto {
+    margin: 1rem 0 1.5rem;
+}
+
+.card-topico-foto img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-topico-foto figcaption {
+    margin-top: 0.3rem;
+    font-size: 0.85rem;
+}
+
+.quadro,
+.tabela {
+    margin: 1rem 0 1.5rem;
+    overflow-x: auto;
+}
+
+.quadro-titulo,
+.tabela-titulo {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.quadro-tabela,
+.tabela-dados {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.quadro-tabela th,
+.quadro-tabela td,
+.tabela-dados th,
+.tabela-dados td {
+    padding: 0.45rem 0.6rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Quadro: todas as linhas com borda */
+.quadro-tabela th,
+.quadro-tabela td {
+    border: 1px solid #555;
+}
+
+/* Tabela (padrão IBGE): só bordas em cima e embaixo */
+.tabela-dados {
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+
+.tabela-dados thead th {
+    border-bottom: 1px solid #333;
+}
+
+.tabela-dados td:not(:first-child),
+.tabela-dados th:not(:first-child) {
+    text-align: right;
+}
+
+.referencias .fonte-texto {
+    margin-bottom: 0.8rem;
+}
