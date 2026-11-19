@@ -54,6 +54,7 @@ Os modelos de cartão estão comentados no fim de cada página. Para criar um as
 4. **Escreva o conteúdo** somente entre as marcas `COMEÇAR O CONTEÚDO AQUI` e `TERMINAR O CONTEÚDO AQUI`. Use os modelos de cartões que estão comentados no fim de cada página.
 5. **Toda tag aberta precisa ser fechada**, na ordem certa. Cada arquivo tem um único `<!DOCTYPE html>` e um único `<html>`.
 6. **Todo texto precisa ter fonte**, por exemplo: (Wendling; Santin, 2015).
+7. **Toda foto do Clube leva o crédito** na legenda (`data-legenda`): `Foto: coordenação do Clube de Ciências Ouro Verde.` As fotos são tiradas por um estudante responsável, com o celular da coordenação.
 
 ## Como criar uma página nova
 
