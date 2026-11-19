@@ -450,6 +450,11 @@
     border-radius: 8px;
 }
 
+.modal-imagem img.foto-inteira {
+    max-height: none;
+    object-fit: contain;
+}
+
 .modal-imagem figcaption {
     margin-top: 6px;
     color: #888;
@@ -537,4 +542,41 @@
         font-size: 1.25rem;
     }
 
+}
+
+
+/* =========================================
+   TÍTULO ACIMA DE UM GRUPO DE CARTÕES
+   (ex.: "Nossa história" na página Projetos)
+========================================= */
+
+.cabecalho-grade {
+    margin: 0 0 1.6rem;
+}
+
+.grade-topicos + .cabecalho-grade {
+    margin-top: 4rem;
+}
+
+.cabecalho-grade h2 {
+    color: var(--verde-escuro);
+    font-family: "Cinzel", serif;
+    font-size: clamp(1.5rem, 2.6vw, 2rem);
+}
+
+/* listas dentro dos cartões e da janela */
+.card-topico-texto ul,
+.modal-texto ul {
+    margin: 0.6rem 0 1rem 1.3rem;
+    list-style: disc;
+}
+
+.modal-texto li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+.modal-texto a {
+    color: var(--verde-principal);
+    text-decoration: underline;
 }

@@ -38,10 +38,10 @@
     <!-- CSS (não alterar)
          Atenção: nas páginas da pasta "paginas" todos os
          caminhos começam com ../ (volta uma pasta). -->
-    <link rel="stylesheet" href="../css/style.css?v=7">
-    <link rel="stylesheet" href="../css/hero.css?v=7">
-    <link rel="stylesheet" href="../css/paginas.css?v=7">
-    <link rel="stylesheet" href="../css/responsivo.css?v=7">
+    <link rel="stylesheet" href="../css/style.css?v=15">
+    <link rel="stylesheet" href="../css/hero.css?v=15">
+    <link rel="stylesheet" href="../css/paginas.css?v=15">
+    <link rel="stylesheet" href="../css/responsivo.css?v=15">
     <!-- Estilos exclusivos da página de receitas -->
     <style>
         .grid-receitas {
@@ -489,6 +489,8 @@
                 id: 4,
                 titulo: "Pão com Erva-Mate",
                 emoji: "🥖",
+                imagem: "../imagens/logos/receitas-pao.jpg",
+                legenda: "Pão com erva-mate preparado no Clube. Foto: coordenação do Clube de Ciências Ouro Verde.",
                 tempo: "120 min",
                 porcoes: "8",
                 dificuldade: "Média",
@@ -685,7 +687,7 @@
 
             conteudo.innerHTML = `
                 <h2 class="modal-titulo">${receita.emoji} ${receita.titulo}</h2>
-                ${receita.imagem ? `<figure class="modal-imagem"><img src="${receita.imagem}" alt="${receita.titulo}"><figcaption>${LEGENDA_FOTO}</figcaption></figure>` : ''}
+                ${receita.imagem ? `<figure class="modal-imagem"><img src="${receita.imagem}" alt="${receita.titulo}"><figcaption>${receita.legenda || LEGENDA_FOTO}</figcaption></figure>` : ''}
                 <div class="modal-secao">
                     <strong>⏱️ Tempo:</strong> ${receita.tempo}<br>
                     <strong>🍽️ Porções:</strong> ${receita.porcoes}<br>

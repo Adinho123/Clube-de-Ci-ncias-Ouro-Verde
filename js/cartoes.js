@@ -47,7 +47,7 @@
         if (imagem) {
             const legenda = imagem.getAttribute('data-legenda');
             html += `<figure class="modal-imagem">
-                        <img src="${imagem.getAttribute('src')}" alt="${imagem.getAttribute('alt') || ''}">
+                        <img class="${imagem.className}" src="${imagem.getAttribute('src')}" alt="${imagem.getAttribute('alt') || ''}">
                         ${legenda ? `<figcaption>${legenda}</figcaption>` : ''}
                      </figure>`;
         }
