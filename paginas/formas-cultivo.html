@@ -251,29 +251,215 @@
                 ========================================== -->
 
                 <!-- ===== TERMINAR O CONTEÚDO AQUI ===== -->
- <article class="card-topico">
-                        <div class="card-topico-imagem">🌱</div>
-                        <div class="card-topico-conteudo">
-                            <p class="card-topico-etapa">Assunto</p>
-                            <h2>
-                                Título do assunto
-                            </h2>
-                            <div class="card-topico-texto">
-                                <p>
-                                    Primeiro parágrafo.
-                                </p>
-                                <p>
-                                    Segundo parágrafo.
-                                </p>
-                                <p class="fonte-texto">
-                                    Fonte: SOBRENOME, Nome. Título. Ano.
-                                </p>
-                            </div>
-                            <button class="card-topico-botao" type="button">
-                                Ler mais →
-                            </button>
-                        </div>
-                    </article>
+ <!-- Regra CSS recomendada para aplicar o padrão ABNT/FICIÊNCIAS dentro dos cartões -->
+<style>
+  .card-topico-texto p {
+    text-indent: 1.25cm;
+    line-height: 1.0;
+    text-align: justify;
+    margin-bottom: 8px;
+  }
+  .card-topico-texto p.fonte-texto {
+    text-indent: 0;
+    font-size: 0.85em;
+    margin-top: 12px;
+    text-align: left;
+  }
+  .card-topico-texto ul, .card-topico-texto ol {
+    line-height: 1.0;
+    text-align: justify;
+    margin-bottom: 8px;
+  }
+</style>
+
+<!-- =====================================================================
+     CARTÃO 1 — INTRODUÇÃO E CONTEXTO HISTÓRICO E ECOLÓGICO
+====================================================================== -->
+<article class="card-topico">
+    <!-- SUGESTÃO DE APARÊNCIA DA FOTO 1:
+         Uma fotografia ampla mostrando pés de erva-mate crescendo naturalmente embaixo de 
+         árvores altas como a araucária na Floresta Ombrófila Mista, evidenciando o ambiente 
+         original de sub-bosque e a convivência harmônica com a mata nativa. -->
+    <div class="card-topico-imagem">
+        <img
+            src="../imagens/agrofloresta/01-erval-nativo-araucarias.jpg"
+            alt="Pés de erva-mate crescendo no sub-bosque sob copas de araucárias na Floresta Ombrófila Mista"
+            data-legenda="Foto: Acervo dos autores (2026)."
+        >
+    </div>
+    <div class="card-topico-conteudo">
+        <p class="card-topico-etapa">Sistemas Agroflorestais • Parte 1</p>
+        <h2>
+            Por que cultivar Erva-Mate em Sistemas Agroflorestais?
+        </h2>
+        <div class="card-topico-texto">
+            <p>
+                Ao longo da história do Brasil, ciclos econômicos predatórios e o modelo de monoculturas da "Revolução Verde" destruíram cerca de 90% da Mata Atlântica e degradaram solos tropicais e subtropicais, que são naturalmente antigos, ácidos e dependentes da matéria orgânica para manterem sua fertilidade (Engel, 1999). Diante do desafio de produzir sem destruir a natureza, surgem os Sistemas Agroflorestais (SAFs), que imitam o funcionamento de uma floresta natural para manter o solo vivo e produtivo (Young, 1991).
+            </p>
+            <p>
+                Nesse cenário sustentável, a erva-mate (<i>Ilex paraguariensis</i> St. Hil.) destaca-se como o principal Produto Florestal Não Madeireiro (PFNM) do Sul do Brasil (Goulart; Penteado, 2019; Stiebler, 2021). Por ter evoluído naturalmente na sombra da Floresta Ombrófila Mista (Mata de Araucárias), ela adapta-se perfeitamente aos SAFs, gerando renda para pequenos produtores e recuperando Áreas de Preservação Permanente (APP) e Reservas Legais (Brasil, 2012; Caron <i>et al.</i>, 2014).
+            </p>
+            <p class="fonte-texto">
+                Fonte: ENGEL, V. L. Introdução aos Sistemas Agroflorestais. Botucatu: FEPAF, 1999; GOULART, I. C. G. R.; PENTEADO, J. J. F. Erva 20: sistema de produção para erva-mate. Brasília, DF: Embrapa, 2019.
+            </p>
+        </div>
+        <button class="card-topico-botao" type="button">
+            Ler mais →
+        </button>
+    </div>
+</article>
+
+<!-- =====================================================================
+     CARTÃO 2 — CONCEITUAÇÃO E CLASSIFICAÇÃO DOS SAFs
+====================================================================== -->
+<article class="card-topico">
+    <!-- SUGESTÃO DE APARÊNCIA DA FOTO 2:
+         Foto mostrando o arranjo espacial de um Sistema Agroflorestal simultâneo, com fileiras 
+         de erva-mate intercaladas com culturas agrícolas (como milho, feijão ou adubação verde) 
+         e árvores mais altas formando diferentes "andares" verdes na propriedade. -->
+    <div class="card-topico-imagem">
+        <img
+            src="../imagens/agrofloresta/02-arranjo-saf-simultaneo.jpg"
+            alt="Fileiras de erva-mate consorciadas com lavouras agrícolas e árvores em Sistema Agroflorestal"
+            data-legenda="Foto: Acervo dos autores (2026)."
+        >
+    </div>
+    <div class="card-topico-conteudo">
+        <p class="card-topico-etapa">Sistemas Agroflorestais • Parte 2</p>
+        <h2>
+            O que são e como se organizam os Sistemas Agroflorestais?
+        </h2>
+        <div class="card-topico-texto">
+            <p>
+                A agrossilvicultura reúne árvores ou arbustos junto com lavouras agrícolas e, às vezes, criação de animais no mesmo terreno, promovendo parcerias ecológicas entre as espécies (Young, 1991; Borges Júnior, 2019). Segundo instituições internacionais (ICRAF e CATIE), os SAFs classificam-se em três categorias principais (Young, 1991):
+            </p>
+            <ul>
+                <li><strong>SAFs Sequenciais:</strong> Lavouras e árvores se revezam no tempo, como no Sistema Taungya, onde grãos são plantados entre mudas jovens até que as árvores cresçam e fechem a copa (Young, 1991).</li>
+                <li><strong>SAFs Simultâneos:</strong> Diferentes culturas, árvores e animais convivem ao mesmo tempo em "andares" verdes, como nos quintais agroflorestais, cultivos em aléias e sistemas multiestratificados (Young, 1991).</li>
+                <li><strong>Sistemas Complementares:</strong> Estruturas de proteção na propriedade, como cercas vivas e quebra-ventos (Young, 1991). Na agricultura atual, destacam-se também os modelos de Integração Lavoura-Pecuária-Floresta (ILPF) (Borges Júnior, 2019).</li>
+            </ul>
+            <p class="fonte-texto">
+                Fonte: YOUNG, A. Agroforestry for soil conservation. Wallingford: CAB International, 1991; BORGES JÚNIOR, N. P. Sistemas agroflorestais: uma alternativa para diversificar a produção agrícola. Rio Verde: IF Goiano, 2019.
+            </p>
+        </div>
+        <button class="card-topico-botao" type="button">
+            Ler mais →
+        </button>
+    </div>
+</article>
+
+<!-- =====================================================================
+     CARTÃO 3 — ECOFISIOLOGIA, LUMINOSIDADE E BIOATIVOS
+====================================================================== -->
+<article class="card-topico">
+    <!-- SUGESTÃO DE APARÊNCIA DA FOTO 3:
+         Foto aproximada (close) comparando lado a lado um ramo de erva-mate cultivado sob 
+         sombreamento moderado (com folhas largas, finas e de cor verde-escura intensa) e um 
+         ramo exposto ao sol pleno (com folhas menores e mais amareladas). -->
+    <div class="card-topico-imagem">
+        <img
+            src="../imagens/agrofloresta/03-comparacao-folhas-sombra-sol.jpg"
+            alt="Comparação visual entre folhas de erva-mate cultivadas na sombra moderada e a pleno sol"
+            data-legenda="Foto: Acervo dos autores (2026)."
+        >
+    </div>
+    <div class="card-topico-conteudo">
+        <p class="card-topico-etapa">Sistemas Agroflorestais • Parte 3</p>
+        <h2>
+            Ecofisiologia: Como a Luz Transforma a Química da Erva-Mate
+        </h2>
+        <div class="card-topico-texto">
+            <p>
+                Adaptada ao sub-bosque, a erva-mate ativa a <i>Shade Avoidance Syndrome</i> (Síndrome de Escape ao Sombreamento) sob menor radiação, deixando suas folhas mais largas e com mais estômatos para captar luz filtrada (Caron <i>et al.</i>, 2014). A faixa ideal para o cultivo comercial situa-se entre <strong>30% e 50% de luminosidade</strong>; sombras excessivas (acima de 75–80%) causam estiolamento e poucos galhos laterais, enquanto o pleno sol gera estresse térmico e hídrico (Baggio <i>et al.</i>, 2011; Mazuchowski <i>et al.</i>, 2007).
+            </p>
+            <p>
+                A luz também controla os bioativos das folhas: sob sombreamento moderado (próximo a 30% de luz), a planta acumula maiores teores de <strong>metilxantinas (cafeína e teobromina)</strong> e reduz o excesso de <strong>compostos fenólicos totais</strong> (protetores contra raios UV), resultando em uma erva-mate com sabor mais suave, menos amargo e menos adstringente (Maccari Junior; Mazuchowski, 2000; Rossa <i>et al.</i>, 2017).
+            </p>
+            <p class="fonte-texto">
+                Fonte: CARON, B. O. et al. Eficiência do uso da radiação solar por plantas Ilex paraguariensis. Ciência Florestal, v. 24, n. 2, 2014; ROSSA, Ü. B. et al. Influência da luminosidade e fertilizantes nos teores de metilxantinas e compostos fenólicos em folhas de erva-mate. Ciência Florestal, v. 27, n. 4, 2017.
+            </p>
+        </div>
+        <button class="card-topico-botao" type="button">
+            Ler mais →
+        </button>
+    </div>
+</article>
+
+<!-- =====================================================================
+     CARTÃO 4 — MANEJO TÉCNICO, PODAS E MONITORAMENTO DIGITAL
+====================================================================== -->
+<article class="card-topico">
+    <!-- SUGESTÃO DE APARÊNCIA DA FOTO 4:
+         Foto de campo mostrando um pé de erva-mate agroflorestal recém-podado no sistema de 
+         poda racional, evidenciando a arquitetura de copa baixa e a preservação de pelo menos 
+         20% das folhas verdes remanescentes ("folhas de pulmão"). -->
+    <div class="card-topico-imagem">
+        <img
+            src="../imagens/agrofloresta/04-poda-racional-saf.jpg"
+            alt="Pé de erva-mate em sistema agroflorestal após poda racional mantendo 20% da folhagem"
+            data-legenda="Foto: Acervo dos autores (2026)."
+        >
+    </div>
+    <div class="card-topico-conteudo">
+        <p class="card-topico-etapa">Sistemas Agroflorestais • Parte 4</p>
+        <h2>
+            Manejo Técnico: Podas, Espaçamento e Tecnologia Digital
+        </h2>
+        <div class="card-topico-texto">
+            <p>
+                Em cultivos agroflorestais planejados, recomenda-se a densidade de <strong>1.250 plantas/ha</strong> (espaçamento de 4 m × 2 m) e o acompanhamento nutricional e fitossanitário por meio do software <strong>Manejo-Matte®</strong>, desenvolvido pela Embrapa (Goulart; Penteado, 2019; Stiebler, 2021). Além disso, três podas determinam a longevidade e a rentabilidade do erval:
+            </p>
+            <ol>
+                <li><strong>Poda de Formação (Ano 2):</strong> Corta a ponta do galho principal para quebrar a dominância apical e induzir ramos laterais equilibrados (Goulart; Penteado, 2017; Medrado <i>et al.</i>, 2000).</li>
+                <li><strong>Poda de Produção (Ciclos de 18 a 24 meses):</strong> Colheita seletiva que mantém obrigatoriamente no mínimo <strong>20% das folhas verdes</strong> na copa para garantir a fotossíntese e a rebrota (Goulart; Penteado, 2017; Santin, 2008).</li>
+                <li><strong>Poda de Renovação (Rebaixamento):</strong> Corte basal a até 1 metro do solo no repouso vegetativo para regenerar árvores velhas ou deformadas (Baggio <i>et al.</i>, 2011; Goulart; Penteado, 2017).</li>
+            </ol>
+            <p class="fonte-texto">
+                Fonte: GOULART, I. C. G. R.; PENTEADO, J. J. F. Poda em erva-mate plantada. Colombo: Embrapa Florestas, 2017; MEDRADO, M. J. S. et al. Sistemas de poda de formação e produtividade da erva-mate. Colombo: Embrapa Florestas, 2000.
+            </p>
+        </div>
+        <button class="card-topico-botao" type="button">
+            Ler mais →
+        </button>
+    </div>
+</article>
+
+<!-- =====================================================================
+     CARTÃO 5 — SERVIÇOS ECOSSISTÊMICOS E RECUPERAÇÃO AMBIENTAL
+====================================================================== -->
+<article class="card-topico">
+    <!-- SUGESTÃO DE APARÊNCIA DA FOTO 5:
+         Foto tirada em ângulo baixo mostrando o chão do erval agroflorestal coberto por uma 
+         rica camada de serapilheira (folhas e galhos em decomposição) junto às raízes das árvores, 
+         ilustrando a proteção contra erosão e a ciclagem natural de nutrientes. -->
+    <div class="card-topico-imagem">
+        <img
+            src="../imagens/agrofloresta/05-servicos-ecossistemicos-serapilheira.jpg"
+            alt="Solo protegido por camada de serapilheira em sistema agroflorestal com erva-mate"
+            data-legenda="Foto: Acervo dos autores (2026)."
+        >
+    </div>
+    <div class="card-topico-conteudo">
+        <p class="card-topico-etapa">Sistemas Agroflorestais • Parte 5</p>
+        <h2>
+            Serviços Ecossistêmicos e Recuperação de Áreas Degradadas
+        </h2>
+        <div class="card-topico-texto">
+            <p>
+                Além da produção comercial, os SAFs com erva-mate restauram funções ecológicas essenciais: as copas amortecem o impacto das chuvas e as raízes seguram a terra, evitando a erosão e protegendo os rios (Caron <i>et al.</i>, 2014; Borges Júnior, 2019). As árvores de raízes profundas ainda atuam como verdadeiras <strong>"bombas de nutrientes"</strong>, buscando minerais nas camadas fundas do subsolo e devolvendo-os à superfície pela decomposição da serapilheira (Young, 1991; Borges Júnior, 2019).
+            </p>
+            <p>
+                Por aliarem equilíbrio ecológico, qualidade industrial e viabilidade econômica, o Código Florestal Brasileiro (Lei n.º 12.651/2012) reconhece os Sistemas Agroflorestais com erva-mate como estratégia legal e sustentável para recompor Áreas de Preservação Permanente (APP) e Reservas Legais (RL) em propriedades rurais (Brasil, 2012; Goulart; Penteado, 2019; Stiebler, 2021).
+            </p>
+            <p class="fonte-texto">
+                Fonte: BRASIL. Lei n.º 12.651, de 25 de maio de 2012 (Código Florestal Brasileiro). Diário Oficial da União, Brasília, DF, 28 maio 2012; STIEBLER, L. P. P. M. Avaliação da produtividade de Erva-mate conduzida em sistema agroflorestal. Curitibanos: UFSC, 2021.
+            </p>
+        </div>
+        <button class="card-topico-botao" type="button">
+            Ler mais →
+        </button>
+    </div>
+</article>
 
             </div>
         </section>
